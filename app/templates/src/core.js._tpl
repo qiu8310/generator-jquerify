@@ -1,0 +1,31 @@
+define([
+	'./var/author',
+	'./var/toString'
+], function(author, toString) {
+
+	var <%= slugname %> = function(name) {
+		return new <%= slugname %>.fn.init(name);
+	};
+
+
+  <%= slugname %>.fn = <%= slugname %>.prototype = {
+
+    version: '$VERSION',
+    author: author,
+
+		constructor: <%= slugname %>,
+
+
+		init: function(name) {
+			this.name = toString.call(name);
+			return this;
+		}
+
+
+	};
+
+
+  <%= slugname %>.fn.init.prototype = <%= slugname %>.fn;  // 这是最重要的一行，实现继承
+
+	return <%= slugname %>;
+});

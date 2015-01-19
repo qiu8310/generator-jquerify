@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jquerify Unit Test</title>
+	<link rel="stylesheet" href="./libs/qunit/qunit.css">
+	<script src="./libs/qunit/qunit.js"></script>
+	<!--<script src="./libs/blanket/blanket.js" data-cover-flags="debug"></script>-->
+	<!--<script src="./libs/blanket/blanket.js" data-cover-flags="branchTracking"></script>-->
+	<script src="./libs/blanket/blanket.js"></script>
+
+
+	<script src="../dist/<%= slugname %>.js" data-cover></script>
+
+
+	<script src="unit/testCore.js"></script>
+	<script src="unit/testBar.js"></script>
+	<script src="unit/testFoo.js"></script>
+
+
+  <script src="./libs/swarminject.js"></script>
+</head>
+<body>
+	<div id="qunit"></div>
+	<div id="qunit-fixture"></div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "testUrl" : "http://localhost/jquerify",
+  "swarmUrl" : "http://fcbst.sinaapp.com/testswarm/",
+  "browserSets": [ "Mobile-Browers", "PC-Browers" ],
+  "authUsername" : "you can create from http://fcbst.sinaapp.com/testswarm/create",
+  "authToken" : "you can get this while you create a project",
+  "runMax" : 3
+}

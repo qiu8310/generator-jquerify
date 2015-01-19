@@ -1,0 +1,10 @@
+define([
+	'./core',
+	'./foo/isFoo'
+], function(<%= slugname %>, isFoo) {
+
+  <%= slugname %>.isFoo = isFoo;
+
+	return <%= slugname %>;
+
+});

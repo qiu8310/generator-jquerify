@@ -1,0 +1,5 @@
+module('bar');
+test('.bar', function() {
+  var a = <%= slugname %>();
+  equal(a.bar(), 'I\'m the bar');
+});

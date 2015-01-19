@@ -1,0 +1,28 @@
+module('core');
+test('core', function() {
+  var a = <%= slugname %>('Wonderfully'),
+    b = <%= slugname %>();
+
+  expect(5);
+
+  equal(a.author, 'Zhonglei Qiu');
+  equal(a.name, '[object String]');
+  notStrictEqual(a.version, true);
+
+  equal(b.author, 'Zhonglei Qiu');
+  equal(b.name, '[object Undefined]');
+});
+
+
+test('#noConflict', function() {
+  notStrictEqual(<%= slugname %>.noConflict, true);
+
+  var oldJ = <%= slugname %>;
+  window.<%= slugname %> = 'others';
+
+  var newJ = oldJ.noConflict(true);
+  equal(window.<%= slugname %>, 'others');
+  equal(newJ, oldJ);
+  window.<%= slugname %> = newJ;
+
+});

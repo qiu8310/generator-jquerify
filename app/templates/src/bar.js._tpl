@@ -1,0 +1,9 @@
+define([
+	'./core'
+], function(<%= slugname %>) {
+
+  <%= slugname %>.fn.bar = function() {
+		return 'I\'m the bar';
+	};
+
+});

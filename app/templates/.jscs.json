@@ -1,0 +1,21 @@
+{
+  "disallowSpacesInCallExpression": true,
+  "disallowEmptyBlocks": true,
+
+
+  "disallowImplicitTypeConversion": ["numeric", "boolean", "binary", "string"],
+  "disallowKeywordsOnNewLine": [],
+  "disallowKeywords": ["with"],
+
+  "disallowMixedSpacesAndTabs": true,
+  "disallowMultipleLineStrings": true,
+
+  "disallowNewlineBeforeBlockStatements": true,
+
+  "disallowQuotedKeysInObjects": true,
+  "disallowSpaceAfterObjectKeys": true,
+  "disallowTrailingWhitespace": true,
+
+
+  "excludeFiles": [ "src/intro.js", "src/outro.js" ]
+}

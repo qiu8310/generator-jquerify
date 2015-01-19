@@ -1,0 +1,6 @@
+module('foo');
+test('#foo', function() {
+  equal(<%= slugname %>.isFoo('Foo'), true);
+  equal(<%= slugname %>.isFoo('aFoo'), false);
+  equal(<%= slugname %>.isFoo('fooB'), false);
+});
