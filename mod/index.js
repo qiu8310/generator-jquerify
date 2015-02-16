@@ -1,8 +1,7 @@
 'use strict';
 var yeoman = require('yeoman-generator'),
   fs = require('fs'),
-  path = require('path'),
-  mkdirpSync = require('mkdirp').sync;
+  path = require('path');
 
 
 module.exports = yeoman.generators.Base.extend({
