@@ -1,6 +1,6 @@
 {
   "name": "generator-jquerify",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Build a new project use the jquery way",
   "license": "MIT",
   "main": "app/index.js",
