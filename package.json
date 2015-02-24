@@ -25,7 +25,7 @@
     "jquerify"
   ],
   "dependencies": {
-    "chalk": "^0.5.1",
+    "chalk": "^1.0.0",
     "yeoman-generator": "^0.18.0",
     "yo-helper": "^0.0.1"
   },
